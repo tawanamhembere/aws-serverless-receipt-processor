@@ -30,7 +30,7 @@
 3. Lambda retrieves the bucket and object key from the S3 event.
 4. Lambda verifies that the object exists.
 5. Lambda sends the document to Amazon Textract.
-6. Textract AnalyzeExpense extracts receipt information.
+6. Textract AnalyzeExpense extracts receipt information using Custom Queries or Generative AI.
 7. Lambda parses the Textract response.
 8. A unique receipt ID is generated.
 9. The extracted data is stored in DynamoDB.
